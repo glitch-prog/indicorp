@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+main {
+  background: #fafafa;
+}
+
 a {
   text-decoration: none;
 }
@@ -620,4 +624,10 @@ body {
 .brands_logo img {
   width: 151px;
   height: 72px;
+}
+
+.stripe {
+  height: 77px;
+  background: #252b42;
+  margin-top: 158px;
 }
