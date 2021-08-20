@@ -4,6 +4,21 @@
   padding: 0;
 }
 
+header ul {
+  text-align: center;
+}
+
+header ul li {
+  display: inline;
+  border-right: 1px solid #252b42;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .hero {
   height: 800px;
   padding-top: 184px;
@@ -62,12 +77,14 @@
   line-height: 28px;
   text-align: center;
   color: #00a0c1;
+  cursor: pointer;
 }
 
-/*form:hover {
-  background: #ffa62b;
+.hero_buttons button:hover {
+  background-color: #ffa62b;
   color: #ffffff;
-}*/
+  border-color: #ffa62b;
+}
 
 .hero_cards {
   margin-left: 167px;
@@ -75,12 +92,7 @@
 
 .card {
   display: inline-block;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 35px 40px;
-  position: static;
-  width: 328px;
-  height: 210px;
   left: 0px;
   top: 0px;
   background: #ffffff;
@@ -195,6 +207,7 @@
 }
 
 .stat_title h2 {
+  text-align: center;
   margin-bottom: 10px;
   position: static;
   width: 353px;
