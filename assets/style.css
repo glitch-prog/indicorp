@@ -17,6 +17,14 @@ a {
   flex-direction: row;
 }
 
+header {
+  position: absolute;
+}
+
+main {
+  position: relative;
+}
+
 .header_logo a {
   font-family: Montserrat;
   font-style: normal;
@@ -492,6 +500,7 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
   color: #252b42;
+  margin-bottom: 15px;
 }
 
 .service_title p {
@@ -568,6 +577,8 @@ body {
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #737373;
+
+  margin-bottom: 35px;
 }
 
 .service_about h5 {
@@ -588,6 +599,8 @@ body {
 .about {
   display: flex;
   flex-direction: row;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .about_title {
@@ -615,21 +628,44 @@ body {
 
 .brands {
   margin-top: 100px;
+  position: relative;
 }
 
 .brands_logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1054px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.brands_logo img {
-  width: 151px;
-  height: 72px;
+.subscribe_card {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #16697a;
+  height: 124px;
+  width: 986px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribe_card h3 {
+  display: flex;
+  width: 258px;
+  height: 64px;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
 }
 
 .stripe {
+  position: static;
   height: 77px;
   background: #252b42;
   margin-top: 158px;
