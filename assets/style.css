@@ -55,6 +55,9 @@ a {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
 }
 
 .hero {
