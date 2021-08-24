@@ -4,6 +4,18 @@
   padding: 0;
 }
 
+header {
+  position: absolute;
+  z-index: 1;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+}
+
 main {
   background: #fafafa;
 }
@@ -12,17 +24,18 @@ a {
   text-decoration: none;
 }
 
+.header_container {
+  max-width: 1332px;
+  justify-content: center;
+}
+
 .wrapper {
+  margin-left: 197px;
+  width: 1332px;
+  height: 104px;
   display: flex;
   flex-direction: row;
-}
-
-header {
-  position: absolute;
-}
-
-main {
-  position: relative;
+  align-items: center;
 }
 
 .header_logo a {
@@ -31,23 +44,18 @@ main {
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0.1px;
   color: #252b42;
+}
+
+.header_menu {
+  width: 280px;
+  margin-left: 117px;
 }
 
 .header_menu ul {
   display: flex;
-  flex-direction: row;
   list-style: none;
-  padding-right: 10;
-  width: 280px;
-  height: 24px;
-  left: calc(50% - 280px / 2 - 162px);
-  top: 40px;
-}
-
-.header_menu ul li {
-  padding-right: 21px;
+  justify-content: space-between;
 }
 
 .header_menu ul li a {
@@ -61,13 +69,6 @@ main {
   color: #737373;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-width: 100vh;
-}
-
 .hero {
   height: 800px;
   padding-top: 184px;
@@ -76,16 +77,16 @@ body {
   background-size: cover;
 }
 
+.hero_container {
+  max-width: 1139px;
+  margin-left: 197px;
+}
+
 .hero_title {
-  margin: 0px 0px 35px 197px;
+  max-width: 509px;
 }
 
 .hero_title h1 {
-  position: static;
-  width: 509px;
-  height: 160px;
-  left: 0px;
-  top: 0px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
@@ -96,11 +97,6 @@ body {
 }
 
 .hero_title p {
-  position: static;
-  width: 376px;
-  height: 60px;
-  left: 0px;
-  top: 195px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -111,7 +107,8 @@ body {
 }
 
 .hero_buttons {
-  margin: 0px 0px 35px 197px;
+  margin-top: 35px;
+  margin-bottom: 80px;
 }
 
 .hero_buttons button {
@@ -136,20 +133,18 @@ body {
 }
 
 .hero_cards {
-  margin-left: 167px;
+  width: 1074px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
+  width: 328px;
+  height: 210px;
   display: inline-block;
   padding: 35px 40px;
-  left: 0px;
-  top: 0px;
   background: #ffffff;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 90px 30px 0px;
 }
 
 .card h3 {
@@ -329,10 +324,6 @@ body {
 
 .stat_card h5 {
   position: static;
-  width: 109px;
-  height: 24px;
-  left: 60.5px;
-  top: 155px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -347,8 +338,6 @@ body {
   position: static;
   width: 48px;
   height: 48px;
-  left: 91px;
-  top: 30px;
 }
 
 .advice_title {
@@ -361,8 +350,6 @@ body {
   position: static;
   width: 1050px;
   height: 197px;
-  left: calc(50% - 1050px / 2);
-  top: 80px;
 }
 
 .advice_title h2 {
@@ -382,10 +369,7 @@ body {
 
 .advice_title p {
   position: static;
-  width: 470px;
-  height: 40px;
-  left: 197px;
-  top: 67px;
+
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -519,24 +503,6 @@ body {
   color: #737373;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-
-  position: static;
-  width: 1053px;
-  height: 442px;
-  left: calc(50% - 1053px / 2 + 1.5px);
-  top: 369px;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-}
-
 .service_video iframe {
   position: static;
   width: 597px;
@@ -641,27 +607,71 @@ body {
   justify-content: space-between;
 }
 
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .subscribe_card {
   position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: #16697a;
   height: 124px;
   width: 986px;
   margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  bottom: 20px;
+}
+
+.subscribe_card_inside {
+  height: 124px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .subscribe_card h3 {
-  display: flex;
+  margin-right: 0;
   width: 258px;
   height: 64px;
   font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.1px;
   color: #ffffff;
+}
+
+.subscribe_card_email {
+  width: 450px;
+  display: flex;
+  margin-left: 400px;
+}
+
+.subscribe_card form {
+  display: flex;
+  flex-direction: row;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.subscribe_card form input {
+  height: 58px;
+}
+
+#POST-name {
+  width: 333px;
+}
+
+[type='submit'] {
+  width: 115px;
 }
 
 .stripe {
@@ -669,4 +679,55 @@ body {
   height: 77px;
   background: #252b42;
   margin-top: 158px;
+}
+
+.contact_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 110px;
+}
+
+.contact_title h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  margin-bottom: 10px;
+}
+
+.contact_title p {
+  width: 470px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  text-align: center;
+}
+
+.contact_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px;
+  position: static;
+  width: 328px;
+  height: 333px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
 }
