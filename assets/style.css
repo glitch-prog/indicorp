@@ -24,6 +24,14 @@ a {
   text-decoration: none;
 }
 
+.container {
+  /* justify-content: center; */
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 205px;
+}
+
 .header_container {
   max-width: 1332px;
   justify-content: center;
@@ -79,7 +87,8 @@ a {
 
 .hero_container {
   max-width: 1139px;
-  margin-left: 197px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero_title {
@@ -94,6 +103,7 @@ a {
   line-height: 80px;
   letter-spacing: 0.2px;
   color: #252b42;
+  margin-bottom: 35px;
 }
 
 .hero_title p {
@@ -130,6 +140,7 @@ a {
   background-color: #ffa62b;
   color: #ffffff;
   border-color: #ffa62b;
+  transition: 0.4s;
 }
 
 .hero_cards {
@@ -151,8 +162,6 @@ a {
   position: static;
   width: 222px;
   height: 32px;
-  /* left: 40px;
-  top: 93px; */
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -181,60 +190,18 @@ a {
   margin: 10px 0px;
 }
 
-.special_card {
-  display: inline-block;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 35px 40px;
-  position: static;
-  width: 328px;
-  height: 210px;
-  left: 0px;
-  top: 0px;
+.card:hover {
   background: #00a0c1;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 0px;
+  transition: 0.4s;
 }
 
-.special_card h3 {
-  position: static;
-  width: 222px;
-  height: 32px;
-  left: 40px;
-  top: 93px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.1px;
+.card:hover h3 {
   color: #ffffff;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 10px 0px;
 }
 
-.special_card p {
-  position: static;
-  width: 213px;
-  height: 40px;
-  left: 40px;
-  top: 135px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
+.card:hover p {
   color: #ffffff;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 10px 0px;
 }
 
 .stat_title {
@@ -243,22 +210,13 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0px;
-  position: static;
-  width: 864px;
-  height: 107px;
-  left: calc(50% - 864px / 2);
-  top: 80px;
-  margin: 192px auto 50px auto;
+  margin-bottom: 50px;
+  margin-top: 192px;
 }
 
 .stat_title h2 {
   text-align: center;
   margin-bottom: 10px;
-  position: static;
-  width: 864px;
-  height: 57px;
-  left: 255.5px;
-  top: 0px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -269,13 +227,9 @@ a {
 }
 
 .stat_title p {
-  position: static;
-  width: 511px;
-  height: 40px;
-  left: 176.5px;
-  top: 67px;
   font-family: Montserrat;
   font-style: normal;
+  width: 511px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -283,36 +237,20 @@ a {
   letter-spacing: 0.2px;
   color: #737373;
 }
+
 .stat_cards {
-  align-items: center;
-  margin-left: 195.5px;
-  margin-right: 205.5;
+  display: flex;
+  justify-content: space-between;
 }
 
 .stat_card {
-  margin-bottom: 205px;
-  margin-left: 40px;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 40px;
-  position: static;
-  width: 230px;
-  height: 209px;
-  left: 0px;
-  top: 0px;
   background: #ffffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .stat_card h2 {
-  position: static;
-  width: 53px;
-  height: 57px;
-  left: 88.5px;
-  top: 88px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -323,7 +261,6 @@ a {
 }
 
 .stat_card h5 {
-  position: static;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -335,21 +272,21 @@ a {
 }
 
 .stat_card img {
-  position: static;
   width: 48px;
   height: 48px;
 }
 
 .advice_title {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 45px 0px;
   position: static;
-  width: 1050px;
-  height: 197px;
+  width: 470px;
+  margin-top: 205px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advice_title h2 {
@@ -368,8 +305,6 @@ a {
 }
 
 .advice_title p {
-  position: static;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -378,7 +313,6 @@ a {
   text-align: center;
   letter-spacing: 0.2px;
   color: #737373;
-  flex: none;
   order: 1;
   flex-grow: 0;
   margin: 10px 0px;
@@ -391,11 +325,6 @@ a {
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  position: static;
-  width: 1049px;
-  height: 342px;
-  left: calc(50% - 1049px / 2);
-  top: 277px;
 }
 
 .advice_card {
@@ -405,19 +334,12 @@ a {
   padding: 0px;
   position: static;
   width: 230px;
-  height: 341px;
-  left: 4px;
-  top: 0px;
   background: #ffffff;
   margin-right: 40px;
 }
 
 .advice_card h5 {
-  position: static;
   width: 160px;
-  height: 48px;
-  left: 30px;
-  top: 30px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -429,11 +351,6 @@ a {
 }
 
 .advice_card p {
-  position: static;
-  width: 160px;
-  height: 80px;
-  left: 30px;
-  top: 93px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -450,32 +367,16 @@ a {
   right: 0px;
 }
 
-.service {
-  margin-top: 201px;
-}
-
 .service_title {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
-
-  position: static;
-  width: 864px;
-  height: 169px;
-  left: calc(50% - 864px / 2);
-  top: 100px;
-
   margin-left: auto;
   margin-right: auto;
 }
 
 .service_title h2 {
-  position: static;
-  width: 461px;
-  height: 114px;
-  left: 25px;
-  top: 0px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -488,11 +389,6 @@ a {
 }
 
 .service_title p {
-  position: static;
-  width: 511px;
-  height: 40px;
-  left: 0px;
-  top: 129px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -503,24 +399,23 @@ a {
   color: #737373;
 }
 
+.service_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .service_video iframe {
-  position: static;
-  width: 597px;
-  height: 442px;
-  left: 1.5px;
-  top: 0px;
   background: #ffffff;
   border: 1px solid #dedede;
   box-sizing: border-box;
   border-radius: 5px;
 }
 
+.service_about {
+  max-width: 333px;
+}
+
 .service_about h2 {
-  position: static;
-  width: 324px;
-  height: 114px;
-  left: calc(50% - 324px / 2 - 3px);
-  top: 20px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -533,9 +428,6 @@ a {
 .service_about p {
   position: static;
   width: 330px;
-  height: 60px;
-  left: calc(50% - 330px / 2);
-  top: 144px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -550,9 +442,6 @@ a {
 .service_about h5 {
   position: static;
   width: 277px;
-  height: 48px;
-  left: 0px;
-  top: 0px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -574,21 +463,13 @@ a {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-
-  position: static;
   width: 277px;
-  height: 77px;
-  left: 0px;
-  top: 254px;
-
   border-radius: 9px;
 }
 
 .about img {
   width: 32px;
   height: 32px;
-  left: 0px;
-  top: 0px;
   margin-right: 20px;
 }
 
@@ -651,11 +532,6 @@ a {
 .subscribe_card form {
   display: flex;
   flex-direction: row;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-
   background: #f9f9f9;
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
@@ -681,53 +557,83 @@ a {
   margin-top: 158px;
 }
 
-.contact_title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 110px;
-}
-
-.contact_title h2 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
+h2 {
+  margin: 0 0 10px 0;
+  font-weight: 700;
   font-size: 40px;
   line-height: 57px;
-  letter-spacing: 0.2px;
   color: #252b42;
-  margin-bottom: 10px;
 }
 
-.contact_title p {
-  width: 470px;
-  font-family: Montserrat;
-  font-style: normal;
+p {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0.2px;
   color: #737373;
+}
+
+/* support */
+.support {
+  padding: 80px 0 148px;
+  background: #f3f3f3;
+}
+
+.support__title {
+  max-width: 865px;
+  margin: 0 auto 80px;
   text-align: center;
 }
 
-.contact_cards {
+.support__content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  padding: 30px;
 }
 
-.contact_card {
+.support__content > .item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 40px;
-  position: static;
-  width: 328px;
-  height: 333px;
-  left: 0px;
-  top: 0px;
-  background: #ffffff;
+  flex: 1;
+  padding: 50px;
+  text-align: center;
+  background: #fff;
+  transition: all 0.4s ease;
+}
+
+.support__content > .item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.support__content > .item > div {
+  margin-bottom: 15px;
+}
+
+.support__content > .item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #252b42;
+  opacity: 0;
+  transform: scaleY(1.1);
+  transition: all 0.4s ease;
+}
+
+.support__content > .item:hover {
+  z-index: 1;
+}
+
+.support__content > .item:hover > div {
+  z-index: 1;
+}
+
+.support__content > .item:hover > .item__image > svg {
+  fill: #fff;
+}
+
+.support__content > .item:hover::before {
+  opacity: 1;
 }
