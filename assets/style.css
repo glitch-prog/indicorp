@@ -167,6 +167,11 @@ h3 {
   right: 20px;
 }
 
+.button_up img {
+  max-width: 20px;
+  max-height: 20px;
+}
+
 .hero {
   height: 800px;
   padding-top: 184px;
