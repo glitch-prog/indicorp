@@ -24,12 +24,14 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  font-size: 24px;
+  letter-spacing: 00.1px;
+}
 .container {
-  /* justify-content: center; */
   max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 205px;
 }
 
 .header_container {
@@ -58,6 +60,7 @@ a {
 .header_menu {
   width: 280px;
   margin-left: 117px;
+  margin-right: 300px;
 }
 
 .header_menu ul {
@@ -75,6 +78,13 @@ a {
   text-align: center;
   letter-spacing: 0.2px;
   color: #737373;
+}
+
+.button_up {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 .hero {
@@ -374,6 +384,7 @@ a {
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 205px;
 }
 
 .service_title h2 {
@@ -489,57 +500,29 @@ a {
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 20px;
 }
 
 .subscribe_card {
-  position: absolute;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   background-color: #16697a;
-  height: 124px;
-  width: 986px;
-  margin-top: 100px;
-  bottom: 20px;
-}
-
-.subscribe_card_inside {
-  height: 124px;
-  display: flex;
-  flex-direction: row;
+  position: absolute;
+  min-width: 986px;
+  justify-content: space-between;
   align-items: center;
+  bottom: 20px;
+  height: 124px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe_card h3 {
-  margin-right: 0;
-  width: 258px;
-  height: 64px;
-  font-size: 24px;
+  max-width: 258px;
+  margin-left: 50px;
   color: #ffffff;
 }
 
-.subscribe_card_email {
-  width: 450px;
-  display: flex;
-  margin-left: 400px;
-}
-
 .subscribe_card form {
-  display: flex;
-  flex-direction: row;
-  background: #f9f9f9;
-  border: 1px solid #e6e6e6;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-
-.subscribe_card form input {
-  height: 58px;
+  padding: 0 50px 0 0;
 }
 
 #POST-name {
@@ -551,7 +534,6 @@ a {
 }
 
 .stripe {
-  position: static;
   height: 77px;
   background: #252b42;
   margin-top: 158px;
@@ -572,7 +554,6 @@ p {
   color: #737373;
 }
 
-/* support */
 .support {
   padding: 80px 0 148px;
   background: #f3f3f3;
@@ -618,7 +599,7 @@ p {
   height: 100%;
   background: #252b42;
   opacity: 0;
-  transform: scaleY(1.1);
+  transform: scale(1.1);
   transition: all 0.4s ease;
 }
 
@@ -636,4 +617,56 @@ p {
 
 .support__content > .item:hover::before {
   opacity: 1;
+}
+
+.ad_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 142px;
+}
+
+.ad_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  min-height: 272px;
+  background-color: #16697a;
+}
+
+.list_menu {
+  max-width: 1050px;
+  height: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_menu ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.list_menu ul li:first-of-type {
+  margin-top: 30px;
+}
+
+.list_menu ul li a {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  /* font-weight: 600; */
+  font-size: 14px;
+}
+
+.list h5 {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
 }
