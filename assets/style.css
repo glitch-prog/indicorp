@@ -839,6 +839,7 @@ p {
 }
 
 .contact_form_item {
+  display: flex;
   margin-bottom: 15px;
 }
 
@@ -859,6 +860,17 @@ p {
   background-color: #e70b89;
   color: #fff;
   text-transform: uppercase;
+}
+
+.contact_form_item a {
+  position: absolute;
+}
+
+.contact_form_item img {
+  position: absolute;
+  margin-left: 264px;
+  margin-top: 13.5px;
+  margin-bottom: 13.5px;
 }
 
 .contact_form a {
