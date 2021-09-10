@@ -312,6 +312,48 @@ h3 {
   border-radius: 5px;
 }
 
+.service_about h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+.service_about p {
+  position: static;
+  width: 330px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+
+  margin-bottom: 35px;
+}
+
+.service_about h5 {
+  position: static;
+  width: 277px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+
+.about img {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
+
 /* DESKTOP STYLES */
 
 @media (min-width: 1024px) {
@@ -439,42 +481,6 @@ h3 {
     max-width: 333px;
   }
 
-  .service_about h2 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 57px;
-    letter-spacing: 0.2px;
-    color: #252b42;
-  }
-
-  .service_about p {
-    position: static;
-    width: 330px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #737373;
-
-    margin-bottom: 35px;
-  }
-
-  .service_about h5 {
-    position: static;
-    width: 277px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: #252b42;
-  }
-
   .about {
     display: flex;
     flex-direction: row;
@@ -489,12 +495,6 @@ h3 {
     padding: 0px;
     width: 277px;
     border-radius: 9px;
-  }
-
-  .about img {
-    width: 32px;
-    height: 32px;
-    margin-right: 20px;
   }
 
   .brands {
@@ -917,8 +917,34 @@ h3 {
     text-align: center;
   }
 
+  .service_video {
+    margin-bottom: 72px;
+  }
+
   .service_video > iframe {
     width: 333px;
     height: 442px;
+  }
+
+  .service_about {
+    margin-bottom: 181px;
+  }
+
+  .about {
+    display: flex;
+  }
+
+  .brands_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brands_logo > img {
+    width: 153px;
+  }
+
+  .brands_logo > img:not(:last-child) {
+    margin-bottom: 60px;
   }
 }
