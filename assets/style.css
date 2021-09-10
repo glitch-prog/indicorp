@@ -968,4 +968,13 @@ p {
   .subscribe_card_input input {
     width: 220px;
   }
+
+  .ad_title {
+    margin-top: 130px;
+    background: #fafafa;
+  }
+
+  .list_menu ul:last-child > .list_menu ul li:last-child {
+    margin-bottom: 56px;
+  }
 }
