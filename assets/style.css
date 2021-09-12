@@ -965,16 +965,38 @@ p {
     width: 414px;
   }
 
+  .subscribe_card_email {
+    margin-top: 30px;
+  }
+
   .subscribe_card_input input {
     width: 220px;
   }
 
+  .support__title {
+    margin-top: 75px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .ad {
+    background: #fafafa;
+  }
+
   .ad_title {
     margin-top: 130px;
-    background: #fafafa;
+    padding-top: 40px;
   }
 
   .list_menu ul:last-child > .list_menu ul li:last-child {
     margin-bottom: 56px;
+  }
+
+  footer .container {
+    width: 239px;
+  }
+
+  .button > .default__button {
+    margin-top: 50px;
   }
 }
